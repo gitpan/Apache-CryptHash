@@ -9,7 +9,7 @@ BEGIN {
   use MIME::Base64;
   use Crypt::CapnMidNite;
   use vars qw($VERSION);
-  $VERSION = do { my @r = (q$Revision: 3.02 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+  $VERSION = do { my @r = (q$Revision: 3.03 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 }
 
 
@@ -162,7 +162,7 @@ __END__
 
 =head1 NAME
 
-Apache::CryptHash
+Apache::CryptHash - Encrypted tokens for cookies
 
 =head1 SYNOPSIS
 
