@@ -1,5 +1,11 @@
 Revision history for Perl extension Apache::CryptHash.
 
+3.02  Sat Jan  4 16:31:48 PST 2003
+	remove really dumb reference to Apache.pm... sigh....
+
+3.01  Fri Jan  3 16:17:48 PST 2003
+	documentation update
+
 3.00  Sun Sep 22 16:15:16 PDT 2002
 	change group name to Apache
 

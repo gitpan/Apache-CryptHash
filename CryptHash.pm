@@ -5,11 +5,11 @@ use strict;
 #use warnings;
 
 BEGIN {
-  use Apache;
+#  use Apache;
   use MIME::Base64;
   use Crypt::CapnMidNite;
   use vars qw($VERSION);
-  $VERSION = do { my @r = (q$Revision: 3.01 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+  $VERSION = do { my @r = (q$Revision: 3.02 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 }
 
 
