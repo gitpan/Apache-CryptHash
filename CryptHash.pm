@@ -9,7 +9,7 @@ BEGIN {
   use MIME::Base64;
   use Crypt::CapnMidNite;
   use vars qw($VERSION);
-  $VERSION = do { my @r = (q$Revision: 3.00 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+  $VERSION = do { my @r = (q$Revision: 3.01 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 }
 
 
@@ -162,11 +162,11 @@ __END__
 
 =head1 NAME
 
-Crypt::CryptHash
+Apache::CryptHash
 
 =head1 SYNOPSIS
 
-use Crypt::CryptHash;
+use Apache::CryptHash;
 
 =head1 DESCRIPTION
 
@@ -186,11 +186,11 @@ hard work for Apache::AuthCookie
 Create class reference and set passcode to the value
 returned by Sys::Hostname::hostname;
 
-  my $c = CryptHash->init;	# default passcode = hostname
+  my $c = Apache::CryptHash->init;	# default passcode = hostname
 
 init takes an optional parameter 
 
-  my $c = CryptHash->init('no');
+  my $c = Apache::CryptHash->init('no');
 
   $c->passcode('no'}		# will turn encryptation off
 				# and put in Debug mode
@@ -243,7 +243,7 @@ Return the md5 base 64 hash of input string.
 
 =item C<checkMAC>
 
-  $c = Crypt::CheckHash->init('some password');
+  $c = Apache::CryptHash->init('some password');
   $c->checkMAC(\%state, \@mac_keys)
 
 Does a comparison of the MAC in the B<%state> vs the calculated value based
@@ -262,7 +262,7 @@ L<MIME::Base64>
 
 =head1 COPYRIGHT and LICENSE
 
-  Copyright 2002 Michael Robinton, BizSystems.
+  Copyright 2003 Michael Robinton, BizSystems.
 
 This module is free software; you can redistribute it and/or modify it
 under the terms of either:
